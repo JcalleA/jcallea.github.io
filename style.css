@@ -1,39 +1,30 @@
 
 body{
-  background: rgb(255,0,0);
-background: radial-gradient(circle, rgba(104,104,49,1) 1%, rgba(255,227,91,1) 100%);
+  
+  background: #232527;
   text-align: center;
   max-width: auto;
-  min-width: 490px;
-  min-height: 1200px;
+  min-width: auto;
   margin: 0 auto;
   animation: fondo linear 2s infinite;
   
 }
 @keyframes fondo{
   0%{
-    background-size:150%;
-    background-position: center;
   }
   25%{
-    background-position: center;
-    background-size:350%;
   }
   50%{
-    background-position: center;
-    background-size:550%;
   }
   75%{
-    background-position: center;
-    background-size:350%;
   }
   100%{
-    background-position: center;
-    background-size:150%;
   }
 }
-#imgPerfil{
-  max-width: 200px;
+#perfil{
+  max-width: 180px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 30px white;
 }
 #imgCryp{
   max-width: 160px;
@@ -46,30 +37,34 @@ background: radial-gradient(circle, rgba(104,104,49,1) 1%, rgba(255,227,91,1) 10
   margin: 30px;
   height: auto;
   width: 200px;
-  border: 3px solid;
+  border: 3px solid white;
   border-radius: 20px;
-  box-shadow: inset 0px 0px 20px black;
+  box-shadow: inset 0px 0px 20px white;
   
 }
 #cajas:hover{
   border-color: greenyellow;
   scale: 110%;
+  box-shadow: inset 0px 0px 20px greenyellow;
 }
 h1{
-  color: black;
+  color: white;
   
 }
+h2{
+  color: white;
+}
 h3{
-    color: black;
+    color: white;
 
 }
 p{
-    color: black;
+    color: white;
     
 }
 #btnencrip{
-  border: 2px solid;
-  background-image: url(/matrix.gif);
+  border: 2px solid white;
+  background-image: url(/img/matrix.gif);
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -88,3 +83,48 @@ p{
   
   }
 }
+i{
+  color: white;
+  font-size: 50px;
+  animation: rotar linear 6s infinite ;
+}
+
+@keyframes rotar{
+  from{
+    transform: rotateY(0);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+#cont{
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+#tarjeta{
+  margin: 0 auto;
+  width: 20%;
+}
+#icon{
+  position: absolute;
+  margin: 0 auto;
+  width: 20% ;
+}
+#nombre{
+  position: absolute;
+  margin: 0 auto;
+  color: white;
+  width: 20% ;
+  opacity: 0%;
+}
+#tarjeta:hover #nombre{
+  opacity: 100%;
+}
+#tarjeta:hover #icon{
+  transform: rotateY(0) !important;
+  animation-play-state: paused;
+  opacity: 30%;
+  text-shadow: 0px 0px 40px white;
+}
+
