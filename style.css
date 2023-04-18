@@ -49,12 +49,12 @@ p{
     
 }
 #btnencrip{
+  margin-bottom: 15px;
   border: 2px solid white;
   border-radius: 50%;
   height: 100px;
   width: 100px;
   color: white;
-  animation: btnrotar linear 6s infinite;
   
 }
 @keyframes btnrotar{
@@ -113,10 +113,12 @@ i{
   text-shadow: 0px 0px 40px white;
 }
 #linkPage{
+  
+  width:40%;
   color: white;
   font-size: 50px;
   text-decoration: none;
-  margin: 15px;
+  margin: 3%;
 }
 #linkPage:hover{
   color: greenyellow;
@@ -126,12 +128,13 @@ i{
 #cont2{
   margin: 0 auto;
   display: flex;
+  width: 100%;
 }
 #cajas{
-  
-  margin: 15px;
+  margin: 0 auto;
+  margin-top: 20px;
   height: auto;
-  width: 200px;
+  width: 40%;
   border: 3px solid white;
   border-radius: 20px;
   box-shadow: inset 0px 0px 20px white;
@@ -139,4 +142,34 @@ i{
 }
 #cajas:hover{
   transform: scale(105%);
+}
+#footercont {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+footer {
+    margin: 0 auto;
+    height: 200px;
+}
+span{
+  color: white;
+}
+#cv{
+  background: black;
+  height: 130px;
+}
+#downcv{
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 30px;
+}
+#downcv:hover{
+    box-shadow: inset 0px 0px 40px greenyellow;
+    transform: scale(120%);
+    
+
 }
