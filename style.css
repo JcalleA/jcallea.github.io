@@ -165,11 +165,10 @@ i{
 }
 footer {
     margin: 0 auto;
-    height: 200px;
 }
 #cv{
   background:  var(--bgcv) ;
-  height: 130px;
+  height: auto;
 }
 #downcv{
   width: 200px;
@@ -180,10 +179,41 @@ footer {
 #downcv:hover{
     box-shadow: inset 0px 0px 40px greenyellow;
     transform: scale(120%);
-    
-
 }
+#redes{
+  color: var(--text-color);
+  font-size: 48px;
+  margin: 20px;
+  animation: saltar linear 2s infinite;
+}
+#redes:hover{
+  color: greenyellow;
+  text-shadow: 0px 0px 40px greenyellow;
+  font-size: 60px;
+}
+@keyframes saltar{
+  0%{
+    transform: rotate(4deg);
+  }
+  20%{
+        transform: rotate(-4deg);
 
+  }
+  40%{
+        transform: rotate(4deg);
+
+  }
+  60%{
+    transform: rotate(-4deg);
+  }
+  80%{
+        transform: rotate(0deg);
+
+  }
+  100%{
+        transform: rotate(0deg);
+
+  }
 }
 .switch-button {
     display: inline-block;
