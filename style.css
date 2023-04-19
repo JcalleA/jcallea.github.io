@@ -12,7 +12,7 @@ body.ligth-theme{
     --colorfondo: white ;
     --sombra-perfil:0px 0px 38px black;
     --text-color: black;
-    --bgcv : wheat;
+    --bgcv : rgb(23, 124, 131);
 
 
 
@@ -171,13 +171,32 @@ footer {
   height: auto;
 }
 #downcv{
+  position: relative;
   width: 200px;
   height: 50px;
   border-radius: 30px;
   font-size: 30px;
+  overflow: hidden;
+}
+#downcv::before {
+  content: '';
+  top: 0;
+  left: -100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: greenyellow;
+  font-size: 30px;
+  z-index: -1;
+  
+}
+#downcv:hover::before{
+  left: 0;
+  transition: all 2s;
 }
 #downcv:hover{
-    box-shadow: inset 0px 0px 40px greenyellow;
+    cursor: pointer;
     transform: scale(120%);
 }
 #redes{
