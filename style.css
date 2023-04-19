@@ -58,6 +58,7 @@ h1,h2,h3,p,span{
 }
 
 #btnencrip{
+  
   margin-bottom: 15px;
   border: 2px solid;
   border-color: var(--text-color);
