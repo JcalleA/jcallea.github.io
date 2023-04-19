@@ -4,17 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link id="tema" rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
   <title></title>
   <script src="https://kit.fontawesome.com/15ddfdef82.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="thema">
   <div>
     <h1>Dev Jhonatan Calle</h1>
     <h2>Pagina en desarrollo</h2>
+    <div class="switch-button">
+    <!-- Checkbox -->
+    <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox" onclick="themeChange()">
+    <!-- Botón -->
+    <label for="switch-label" class="switch-button__label"></label>
+</div>
     <img id="perfil" src="/perfil.jpg" alt="">
     <h1>Fullstack Developer</h1>
     <div id="cont">
@@ -153,6 +159,7 @@
                         href="https://www.linkedin.com/in/jhonatan-calle/"></a>
             </footer>
         </div>
-</body>
+<script src="index.js"></script>
 
+</body>
 </html>
