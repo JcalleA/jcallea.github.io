@@ -14,19 +14,14 @@ body.ligth-theme{
     --text-color: black;
     --bgcv : rgb(23, 124, 131);
 
-
-
-
 }
 body{
-  
   background: var(--colorfondo);
   text-align: center;
   max-width: auto;
   min-width: auto;
   margin: 0 auto;
   animation: fondo linear 2s infinite;
-  
 }
 @keyframes fondo{
   0%{
@@ -56,9 +51,7 @@ h1,h2,h3,p,span{
   color: var(--text-color);
   
 }
-
 #btnencrip{
-  
   margin-bottom: 15px;
   border: 2px solid;
   border-color: var(--text-color);
@@ -66,8 +59,6 @@ h1,h2,h3,p,span{
   height: 100px;
   width: 100px;
   color: var(--text-color);
-
-  
 }
 @keyframes btnrotar{
   from{
@@ -77,7 +68,6 @@ h1,h2,h3,p,span{
   to{
   transform: rotate(360deg);
   font-size: 30px;
-  
   }
 }
 i{
@@ -125,7 +115,6 @@ i{
   text-shadow: var(--sombra-perfil);
 }
 #linkPage{
-  
   width:40%;
   color: var(--text-color);
   font-size: 50px;
