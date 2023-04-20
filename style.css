@@ -1,15 +1,17 @@
 :root{
   --colorfondo: #232527 ;
+  --relojfondo: rgb(23, 124, 131) ;
   --sombra-perfil:0px 0px 38px white;
   --text-color: white;
   --bgcv : black;
   --color-green: black;
-  --color-red: white;
+  --color-red: rgb(23, 124, 131);
   --color-button: gray;
   --color-black: #000;
 }
 body.ligth-theme{
     --colorfondo: white ;
+    --relojfondo: #232527 ;
     --sombra-perfil:0px 0px 38px black;
     --text-color: black;
     --bgcv : rgb(23, 124, 131);
@@ -35,12 +37,12 @@ body{
   100%{
   }
 }
-#perfil{
+.perfil{
   max-width: 180px;
   border-radius: 100px;
   box-shadow: var(--sombra-perfil);
 }
-#imgCryp{
+.imgCryp{
   max-width: 160px;
   filter: brightness(1.1);
   border-radius: 100px;
@@ -51,7 +53,7 @@ h1,h2,h3,p,span{
   color: var(--text-color);
   
 }
-#btnencrip{
+.btnencrip{
   margin-bottom: 15px;
   border: 2px solid;
   border-color: var(--text-color);
@@ -84,54 +86,77 @@ i{
     transform: rotateY(360deg);
   }
 }
-#cont{
-  height: 100px;
-  margin: 0 auto;
+.cont{
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  overflow: hidden;
+}
+.slider{
+  width: 2000px;
   display: flex;
+  animation: scrol 20s linear infinite;
 }
-#tarjeta{
-  margin: 0 auto;
-  width: 20%;
+@keyframes scrol{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-1000px);
+  }
 }
-#icon{
+.slider:hover{
+  animation-play-state: paused;
+}
+.tarjeta{
+  position: relative;
+  width: 100px;
+}
+.icon{
   position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
   margin: 0 auto;
-  width: 20% ;
 }
-#nombre{
+.nombre{
   position: absolute;
-  margin: 0 auto;
   color: var(--text-color);
-  width: 20% ;
+  width: 100%;
   opacity: 0%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
-#tarjeta:hover #nombre{
+.tarjeta:hover .nombre{
   opacity: 100%;
 }
-#tarjeta:hover #icon{
+.tarjeta:hover .icon{
   transform: rotateY(0) !important;
   animation-play-state: paused;
   opacity: 30%;
   text-shadow: var(--sombra-perfil);
 }
-#linkPage{
+.cajas a{
   width:40%;
   color: var(--text-color);
   font-size: 50px;
   text-decoration: none;
   margin: 3%;
 }
-#linkPage:hover{
+.cajas a:hover{
   color: greenyellow;
   text-shadow: 0px 0px 40px greenyellow;
   transform: scale(120%);
 }
-#cont2{
+.cont2{
   margin: 0 auto;
   display: flex;
   width: 100%;
 }
-#cajas{
+.cajas{
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -143,10 +168,10 @@ i{
   box-shadow: inset 0px 0px 20px var(--text-color);
   
 }
-#cajas:hover{
+.cajas:hover{
   transform: scale(105%);
 }
-#footercont {
+.footercont {
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -156,11 +181,11 @@ i{
 footer {
     margin: 0 auto;
 }
-#cv{
+.cv{
   background:  var(--bgcv) ;
   height: auto;
 }
-#downcv{
+.downcv{
   position: relative;
   width: 200px;
   height: 50px;
@@ -168,7 +193,7 @@ footer {
   font-size: 30px;
   overflow: hidden;
 }
-#downcv::before {
+.downcv::before {
   content: '';
   top: 0;
   left: -100%;
@@ -181,21 +206,21 @@ footer {
   z-index: -1;
   
 }
-#downcv:hover::before{
+.downcv:hover::before{
   left: 0;
   transition: all 2s;
 }
-#downcv:hover{
+.downcv:hover{
     cursor: pointer;
     transform: scale(120%);
 }
-#redes{
+.footercont a,.cv a{
   color: var(--text-color);
   font-size: 48px;
   margin: 20px;
   animation: saltar linear 2s infinite;
 }
-#redes:hover{
+.footercont a:hover, .cv a:hover{
   color: greenyellow;
   text-shadow: 0px 0px 40px greenyellow;
   font-size: 60px;
@@ -226,15 +251,16 @@ footer {
 }
 .switch-button {
     display: inline-block;
+    width: 40%
 }
 .switch-button .switch-button__checkbox {
     display: none;
 }
 .switch-button .switch-button__label {
     background-color: var(--color-red);
-    width: 5rem;
-    height: 3rem;
-    border-radius: 3rem;
+    width: 80px;
+    height: 50px;
+    border-radius: 50px;
     display: inline-block;
     position: relative;
 }
@@ -242,16 +268,75 @@ footer {
     transition: .2s;
     display: block;
     position: absolute;
-    width: 3rem;
-    height: 3rem;
+    width: 50px;
+    height: 50px;
     background-color: var(--color-button);
     content: '';
     border-radius: 50%;
-    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+    box-shadow: inset 0px 0px 0px 2px var(--color-black);
 }
 .switch-button .switch-button__checkbox:checked + .switch-button__label {
     background-color: var(--color-green);
 }
 .switch-button .switch-button__checkbox:checked + .switch-button__label:before {
     transform: translateX(2rem);
+}
+.menu{
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+.name{
+  margin: 0 auto;
+  width: 100%;
+}
+.reloj{
+  display: flex;
+  margin: 0 auto;
+  margin: 5px;
+  z-index: -2;
+  width: 60%;
+  border: solid var(--relojfondo);
+  box-shadow: inset 0px 0px 40px var(--relojfondo);
+  border-radius: 20px;
+  height: 100px;
+  animation: tictoc 1s linear infinite;
+}
+@keyframes tictoc{
+  0%{
+    box-shadow: inset 0px 0px 40px greenyellow;
+  }
+}
+.reloj .unidades{
+  display: flex;
+  position: relative;
+  text-align: center;
+  min-width: 50px;
+  max-width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 100%;
+  background: var(--relojfondo);
+  min-height: 50px;
+  max-height: 100px
+
+}
+.reloj div{
+  display: flex;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  height: 50px;
+
+}
+.reloj h1{
+  text-shadow: 2px -2px 2px black;
+  margin: 0 auto;
+  margin-top: 5px;
+  font-family: digital;
+  color: white;
+}
+@font-face{
+  font-family: digital;
+  src: url(/recursos/DS-DIGIB.TTF);
 }
