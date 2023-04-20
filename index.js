@@ -22,5 +22,6 @@ function obtenerHora(){
   relojMn.textContent=mn;
   relojSg.textContent=sg;
   relojAm.textContent=am;
+  reloj.style.animationPlayState= "running";
 }
 setInterval(obtenerHora, 1000);
