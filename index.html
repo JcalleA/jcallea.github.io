@@ -51,8 +51,8 @@
         <li class="menu__enlace"><a href="#skills">Skills</a></li>
         <li class="menu__enlace"><a href="#hobbies">Hobbies</a></li>
         <li class="menu__enlace"><a href="#formacion">Formacion</a></li>
-        <li class="menu__enlace"><a href="#">Proyectos</a></li>
-        <li class="menu__enlace"><a href="mailto:kalle-1413@hotmail.com" target="_blank">📧Contacto</a></li>
+        <li class="menu__enlace"><a href="#proyectos">Proyectos</a></li>
+        <li class="menu__enlace"><a href="#contacto">📧Contacto</a></li>
       </ul>
     </nav>
     <div class="switch-button">
@@ -78,8 +78,11 @@
         <li class="sobre__enlace"><a class="fa fa-github" href="https://github.com/JcalleA" target="_blank"></a></li>
         <li class="sobre__enlace"><a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/jhonatan-calle/"
             target="_blank"></a></li>
+        <li class="sobre__enlace "><a class="fa fa-whatsapp" href="https://wa.link/28oef0" target="_blank"></a></li>
         <li class="sobre__enlace "><a class="fa fa-download" href="/recursos/CV_Jhonatan_Calle.pdf" download></a>
         </li>
+
+
       </ul>
     </div>
   </section>
@@ -622,13 +625,33 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="contacto">
     <h1>© 2023 Creado Por Jhonatan Calle</h1>
-    <div class="footer__form">
-      <h1>Contactame 👇</h1>
-      <a href="mailto:kalle-1413@hotmail.com" target="_blank">
-        <img class="footer__img" src="/recursos/Formulario.png" alt="">
-      </a>
+    <div>
+      <form class="footer__form" action="https://formsubmit.co/kalle-1413@hotmail.com" method="POST">
+        <h1>Contactame 👇</h1>
+        <div class="form__entry">
+          <label>Nombre</label>
+          <input class="form__input" type="text" name="name" required>
+        </div>
+        <div class="form__entry">
+          <label>Email</label>
+          <input class="form__input" type="email" name="email" required>
+        </div>
+        <div class="form__entry">
+          <label>Asusnto</label>
+          <input class="form__input" type="text" name="_subject" required>
+        </div>
+        <div class="form__entry">
+          <label>Mensaje</label>
+          <input class="form__input" type="mensaje" name="mensaje" required>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div class="whatsapp">
+      <h1>Escribeme por Whatsapp</h1>
+      <a  href="https://wa.link/28oef0" target="_blank"><img src="/recursos/boton-whatsapp.png" alt=""></a>
     </div>
     <div>
       <a class="fa fa-github" href="http://github.com/JcalleA" target="_blank"></a>

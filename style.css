@@ -413,24 +413,51 @@ i {
 }
 
 .footer {
-  color: var(--colorfondo);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
   margin: 0 auto;
-  text-align: center;
   text-align: center;
   background-color: black;
 }
 .footer__form{
+  margin: 0 auto;
+  font-size: 2rem;
   margin-top: 30px;
-
+  width: 70%;
 }
-.footer__img{
-  width: 40%;
+.form__entry{
+  align-items: center;
+  display: flex;
+  justify-content: right;
+  margin: 10px;
+  
+}
+.form__input{
+  font-size: 2rem;
+  width: 80%;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.footer__form button{
+  width: 200px;
+  height: 80px;
+  border-radius: 20px;
+  font-size: 3rem;
+}
+.footer__form button:hover{
+  transform: scale(120%);
+box-shadow:  0px 0px 10px greenyellow;
+}
+.whatsapp img{
+  margin: 20px;
+  max-width: 400px;
   animation: saltar linear 4s infinite;
 }
 .footer h1{
-  color: var(--colorfondo);
+  color: white;
   font-size: 2rem;
-
 }
 .footer a,
 .cv a {
@@ -443,6 +470,14 @@ i {
   color: greenyellow;
   text-shadow: 0px 0px 40px greenyellow;
   font-size: 60px;
+}
+.whatsapp{
+  margin-top: 50px;
+
+}
+.whatsapp h1{
+  color: white;
+  font-size: 3rem;
 }
 
 @keyframes saltar {
