@@ -1,6 +1,8 @@
 function themeChange (){
   const theme = document.getElementById("thema").classList.toggle("ligth-theme")
 }
+
+
 function obtenerHora(){
   const reloj= document.getElementById('reloj');
   const relojHr= document.getElementById('hr');
@@ -25,3 +27,4 @@ function obtenerHora(){
   reloj.style.animationPlayState= "running";
 }
 setInterval(obtenerHora, 1000);
+

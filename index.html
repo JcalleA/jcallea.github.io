@@ -18,7 +18,33 @@
 
 <body id="thema">
   <header class="menu">
-    <h1>DEV Jhonatan Calle</h1>
+    <div>
+      <h1>DEV Jhonatan Calle</h1>
+      <div class="reloj">
+        <div class="unidades">
+          <h1 id="hr"></h1>
+        </div>
+        <div class="unidades">
+          <h1>:</h1>
+        </div>
+        <div class="unidades">
+          <h1 id="mn"></h1>
+        </div>
+        <div class="unidades">
+          <h1>:</h1>
+        </div>
+        <div class="unidades">
+          <h1 id="sg"></h1>
+        </div>
+        <div class="unidades">
+          <h1>:</h1>
+        </div>
+        <div class="unidades">
+          <h1 id="am"></h1>
+        </div>
+      </div>
+    </div>
+
     <nav class="menu__nav">
       <ul>
         <li class="menu__enlace"><a href="#sobre__mi">Sobre Mi</a></li>
@@ -26,7 +52,7 @@
         <li class="menu__enlace"><a href="#hobbies">Hobbies</a></li>
         <li class="menu__enlace"><a href="#formacion">Formacion</a></li>
         <li class="menu__enlace"><a href="#">Proyectos</a></li>
-        <li class="menu__enlace"><a href="mailto:kalle@hotmail.com">📧Contacto</a></li>
+        <li class="menu__enlace"><a href="mailto:kalle-1413@hotmail.com" target="_blank">📧Contacto</a></li>
       </ul>
     </nav>
     <div class="switch-button">
@@ -38,7 +64,6 @@
       <label for="switch-label" class="switch-button__label"></label>
     </div>
   </header>
-
   <section class="sobre">
     <div class="sobre__foto">
       <img class="foto__perfil" src="/recursos/perfil.jpg" alt="">
@@ -48,11 +73,11 @@
       <p class="sobre__parrafo">Soy Ingeniero Industrial, con diplomado en desarrollo de Software y Analítica de Datos,
         actualmente participo en el proyecto de Oracle con Alura Latam, he desarrollado varios proyectos de carácter
         personal y educativos</p>
-
+      <h2 class="sobre__h2">Redes Sociales 👇 Descarga Mi CV </h2>
       <ul>
-        <li class="sobre__enlace"><a class="fa fa-github" href="https://github.com/JcalleA"></a></li>
-        <li class="sobre__enlace"><a class="fa fa-linkedin-square"
-            href="https://www.linkedin.com/in/jhonatan-calle/"></a></li>
+        <li class="sobre__enlace"><a class="fa fa-github" href="https://github.com/JcalleA" target="_blank"></a></li>
+        <li class="sobre__enlace"><a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/jhonatan-calle/"
+            target="_blank"></a></li>
         <li class="sobre__enlace "><a class="fa fa-download" href="/recursos/CV_Jhonatan_Calle.pdf" download></a>
         </li>
       </ul>
@@ -358,6 +383,62 @@
               <h4>Eat</h4>
             </div>
           </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-book-reader'></i>
+            </div>
+            <div class="nombre">
+              <h4>Study</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-laptop-code'></i>
+            </div>
+            <div class="nombre">
+              <h4>Develop</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-gamepad'></i>
+            </div>
+            <div class="nombre">
+              <h4>Play Games</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-music'></i>
+            </div>
+            <div class="nombre">
+              <h4>Music</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='far fa-futbol'></i>
+            </div>
+            <div class="nombre">
+              <h4>Play Soccer</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-umbrella-beach'></i>
+            </div>
+            <div class="nombre">
+              <h4>Travel</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-pizza-slice'></i>
+            </div>
+            <div class="nombre">
+              <h4>Eat</h4>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -387,69 +468,174 @@
         <h3>2022 UTP</h3>
       </div>
     </div>
+    <div class="formacion__container cursos">
+      <div class="formacion__tarjeta">
+        <img class="formacion__img" src="/recursos/google.png" alt="">
+        <ol>
+          <li>Google Cloud Computing Foundations 2022</li>
+          <li>Data, ML, and AI in Google Cloud 2022</li>
+          <li>Infrastructure in Google Cloud 2022</li>
+          <li>Networking and Security in Google Cloud 2022</li>
+          <li>Cloud Computing Fundamentals 2022</li>
+        </ol>
+      </div>
+      <div class="formacion__tarjeta">
+        <img class="formacion__img" src="/recursos/patzi.png" alt="">
+        <ol>
+          <li>JavaScrip 2022</li>
+          <li>Animaciones CSS 2022</li>
+          <li>Introduccion React.js 2022</li>
+        </ol>
+      </div>
+      <div class="formacion__tarjeta">
+        <img class="formacion__img" src="/recursos/open.png" alt="">
+        <ol>
+          <li>Conceptos Programacion 2022</li>
+          <li>Introduccion Programacion 2022</li>
+          <li>Java 2022</li>
+          <li>JavaScrip 2022</li>
+          <li>Python 2022</li>
+        </ol>
+      </div>
+      <div class="formacion__tarjeta">
+        <img class="formacion__img" src="/recursos/sena.png" alt="">
+        <ol>
+          <li>Manejo Pruebas De Software 2022</li>
+          <li>Tecnologia Gestion Agroempresarial 2024</li>
+          <li>Fundamentos En Gestion De Calidad 2014</li>
+          <li>Corel Draw 2012</li>
+          <li>Analisis HACCP 2012</li>
+          <li>Tecnico Produccion Industrial 2012</li>
+        </ol>
+      </div>
+      <div class="formacion__tarjeta">
+        <img class="formacion__img" src="/recursos/ubits.png" alt="">
+        <ol>
+          <li>Trabajo Colaborativo 2023</li>
+          <li>Trabajo En Equipo 2023</li>
+          <li>Resolucion De Conflictos 2023</li>
+          <li>Comunicación Asertiva 2023</li>
+          <li>Define OKR ́S & KPI ́S 2023</li>
+          <li>Seminario Empresarial Sindical 2022</li>
+        </ol>
+      </div>
+      <div class="formacion__tarjeta">
+        <img class="formacion__img" src="/recursos/bomberos.png" alt="">
+        <ol>
+          <li>Brigada De Emergencias 2019</li>
+          <li>Atencion Prehospitalaria 2018</li>
+          <li>Rescate Espacios Confinados 2016</li>
+          <li>Materiales Peligrosos PRIMAP 2015</li>
+          <li>Entrenamiento Brigadas 2015</li>
+        </ol>
+      </div>
+    </div>
   </section>
-
-
-  <div>
+  <section class="experiencia">
+    <h1>Experiencia Profecional</h1>
+    <div class="experiencia__tarjeta">
+      <img src="/recursos/DESTILERIA.png" alt="" class="experiencia_img">
+      <h1>Operador Procesos Industriales</h1>
+      <h2>Enero 2015 a la Actualidad</h2>
+      <p>Operación y supervision del proceso de producción de alcohol carburante, en la sección de fermentación, manejo
+        de PLC, análisis de datos, control de variables, toma de decisiones, manejo de químicos, preparación de
+        soluciones, operación de equipos de planta y de laboratorio entre otros.
+        Operacion en PTARI Y Cuarto de Control de procesos.</p>
+    </div>
+    <div class="experiencia__tarjeta">
+      <img src="/recursos/sucroal.png" alt="" class="experiencia_img">
+      <h1>Auxiliar Innovacion</h1>
+      <h2>Febrero 2013 a Enero 2015</h2>
+      <p>Operar planta piloto producción de ácido cítrico, análisis físico químicos, análisis microbiológicos,
+        preparación de soluciones, manejo de químicos, operación de equipos de producción, manejo material laboratorio.
+      </p>
+    </div>
+  </section>
+  <section class="portafolio">
     <h1>Mi Portafolio</h1>
-    <div class="cont2">
-      <div class="cajas">
+    <div class="portafolio__container">
+      <div class="portafolio__tarjeta">
         <h2>Encriptador de Texto</h2>
-        <img class="btnencrip" src="/recursos/matrix.gif"></img>
-        <div>
-          <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/EncrypText"></a>
-
-          <a class="fa-solid fa-pager" href="https://jcallea.github.io/EncrypText/"></a>
+        <h2>Htm Css Js</h2>
+        <img class="portafolio__img" src="/recursos/matrix.gif"></img>
+        <div class="portafolio__enlace">
+          <div>
+            <h3>Codigo</h3>
+            <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/EncrypText" target="_blank"></a>
+          </div>
+          <div>
+            <h3>Probar</h3>
+            <a class="fa-solid fa-pager" href="https://jcallea.github.io/EncrypText/" target="_blank"></a>
+          </div>
         </div>
       </div>
-      <div class="cajas">
+      <div class="portafolio__tarjeta">
         <h2>Buscador Servicios</h2>
-        <img class="btnencrip" src="/recursos/people.gif"></img>
+        <h2>Java-Sprint-MySQL</h2>
+        <img class="portafolio__img" src="/recursos/people.gif"></img>
         <div>
-          <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/Bank-Jobs"></a>
+          <h3>codigo</h3>
+          <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/Bank-Jobs" target="_blank"></a>
 
           <!-- a id="linkPage" class="fa-solid fa-pager" href="https://jcallea.github.io/EncrypText/"></a !-->
         </div>
       </div>
     </div>
-    <div class="cont2">
-      <div class="cajas">
+    <div class="portafolio__container">
+      <div class="portafolio__tarjeta">
         <h2>Negocios Manager</h2>
-        <img class="btnencrip" src="/recursos/manager.gif"></img>
+        <h2>React-Mongo-Node</h2>
+        <img class="portafolio__img" src="/recursos/manager.gif"></img>
         <div>
-          <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/my-style-shop"></a>
+          <h3>Codigo</h3>
+          <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/my-style-shop" target="_blank"></a>
           <!-- a id="linkPage" class="fa-solid fa-pager" href="https://jcallea.github.io/EncrypText/"></a !-->
         </div>
       </div>
-      <div class="cajas">
+      <div class="portafolio__tarjeta">
         <h2>Youtube Downloader</h2>
-        <img class="btnencrip" src="/recursos/giphy.gif"></img>
+        <h2>Python</h2>
+        <img class="portafolio__img" src="/recursos/giphy.gif"></img>
         <div>
-          <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/Descargar-viudeos-de-youtube"></a>
+          <h3>Codigo</h3>
+          <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/Descargar-viudeos-de-youtube"
+            target="_blank"></a>
           <!-- a id="linkPage" class="fa-solid fa-pager" href="https://jcallea.github.io/EncrypText/"></a !-->
         </div>
       </div>
     </div>
-    <div class="cont2">
-      <div class="cajas">
+    <div class="portafolio__container">
+      <div class="portafolio__tarjeta">
         <h2>Tic Tac Toe</h2>
-        <img class="btnencrip" src="/recursos/tictactoe.gif"></img>
-        <div>
-          <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/tictactoe"></a>
-          <a id="linkPage" class="fa-solid fa-pager" href="https://jcallea.github.io/tictactoe/"></a>
+        <h2>Htm-Css-Js</h2>
+        <img class="portafolio__img" src="/recursos/tictactoe.gif"></img>
+        <div class="portafolio__enlace">
+          <div>
+            <h3>Codigo</h3>
+            <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/tictactoe" target="_blank"></a>
+          </div>
+          <div>
+            <h3>Probar</h3>
+            <a id="linkPage" class="fa-solid fa-pager" href="https://jcallea.github.io/tictactoe/" target="_blank"></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footercont">
-    <footer>
-      <div>
-        <span>© 2023 Creado Por Jhonatan Calle</span>
-        <br>
-        <a class="fa fa-github" href="http://github.com/JcalleA"></a>
-        <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/jhonatan-calle/"></a>
-    </footer>
-  </div>
+  </section>
+  <footer class="footer">
+    <h1>© 2023 Creado Por Jhonatan Calle</h1>
+    <div class="footer__form">
+      <h1>Contactame 👇</h1>
+      <a href="mailto:kalle-1413@hotmail.com" target="_blank">
+        <img class="footer__img" src="/recursos/Formulario.png" alt="">
+      </a>
+    </div>
+    <div>
+      <a class="fa fa-github" href="http://github.com/JcalleA" target="_blank"></a>
+      <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/jhonatan-calle/" target="_blank"></a>
+    </div>
+
+  </footer>
   <script src="index.js"></script>
 
 </body>
