@@ -1,59 +1,213 @@
-:root{
-  --colorfondo: #232527 ;
-  --relojfondo: rgb(23, 124, 131) ;
-  --sombra-perfil:0px 0px 38px white;
+:root {
+  --colorfondo: #232527;
+  --sombra-perfil: 0px 0px 38px white;
   --text-color: white;
-  --bgcv : black;
+  --bgcv: black;
   --color-green: black;
   --color-red: rgb(23, 124, 131);
   --color-button: gray;
   --color-black: #000;
+  --enlace-color: white;
 }
-body.ligth-theme{
-    --colorfondo: white ;
-    --relojfondo: #232527 ;
-    --sombra-perfil:0px 0px 38px black;
-    --text-color: black;
-    --bgcv : rgb(23, 124, 131);
+
+body.ligth-theme {
+
+  --colorfondo: white;
+  --relojfondo: #232527;
+  --sombra-perfil: 0px 0px 38px black;
+  --text-color: #464646;
+  --bgcv: rgb(23, 124, 131);
+  --enlace-color: #464646;
 
 }
-body{
+
+.menu {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.menu h1 {
+  font-size: 1.8rem;
+}
+
+.menu__enlace {
+  color: var(--enlace-color);
+  justify-content: space-around;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 10px;
+  box-shadow: 0px 0px 5px var(--enlace-color);
+  border-radius: 50px;
+  padding: 5px;
+
+}
+
+.menu__enlace:hover {
+  transform: scale(120%);
+  background-color: rgb(23, 124, 131);
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
   background: var(--colorfondo);
   text-align: center;
-  max-width: auto;
+  max-width: 90%;
   min-width: auto;
   margin: 0 auto;
   animation: fondo linear 2s infinite;
 }
-@keyframes fondo{
-  0%{
-  }
-  25%{
-  }
-  50%{
-  }
-  75%{
-  }
-  100%{
-  }
+
+@keyframes fondo {
+  0% {}
+
+  25% {}
+
+  50% {}
+
+  75% {}
+
+  100% {}
 }
-.perfil{
-  max-width: 180px;
+
+.sobre {
+  justify-content: space-between;
+  text-align: center;
+
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+
+
+}
+
+.foto__perfil {
+  max-width: 210px;
   border-radius: 100px;
   box-shadow: var(--sombra-perfil);
+  margin: 15px;
 }
-.imgCryp{
+
+.sobre__info {
+  margin: 10px;
+  font-size: 5rem;
+}
+
+.sobre__h2 {
+  margin: 10px;
+  font-size: 2.5rem;
+}
+
+.sobre__enlace {
+  justify-content: space-around;
+  align-items: center;
+  display: inline-block;
+  font-size: 3rem;
+  margin: 10px;
+  color: var(--enlace-color);
+  animation: saltar linear 2s infinite;
+}
+
+.sobre__enlace:hover {
+  transform: scale(105%);
+  text-shadow: var(--sombra-perfil);
+  color: greenyellow;
+  text-shadow: 0px 0px 40px greenyellow;
+  
+}
+
+
+.sobre__h1 {
+  font-size: 4rem;
+}
+
+.sobre__parrafo {
+  margin: 10px;
+  margin: 10px;
+  font-size: 2rem;
+  flex-wrap: wrap;
+}
+
+.sobre__mi {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.sobre__mi h1 {
+  font-size: 3.7rem;
+  margin-bottom: 20px;
+}
+
+.sobre__mi p {
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: 400;
+  line-height: 26px;
+
+}
+
+.skills h1{
+  font-size: 4rem;
+  margin: 20px;
+
+}
+.formacion{
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 20px;
+}
+.formacion__container{
+  
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+}
+.formacion h1{
+  margin-bottom: 20px;
+  font-size: 4rem;
+  color: #464646;
+}
+.formacion h2,.formacion h3{
+  font-size: 1rem;
+  color: #000;
+}
+.formacion__tarjeta{
+  width: 25%;
+}
+.formacion__img{
+  width: 100%;
+}
+.imgCryp {
   max-width: 160px;
   filter: brightness(1.1);
   border-radius: 100px;
   border: 5px solid;
 }
 
-h1,h2,h3,p,span{
+h1,
+h2,
+h3,
+p,
+span {
   color: var(--text-color);
-  
+
 }
-.btnencrip{
+
+.btnencrip {
   margin-bottom: 15px;
   border: 2px solid;
   border-color: var(--text-color);
@@ -62,65 +216,79 @@ h1,h2,h3,p,span{
   width: 100px;
   color: var(--text-color);
 }
-@keyframes btnrotar{
-  from{
-  transform: rotate(0);
-  font-size: 10px;
+
+@keyframes btnrotar {
+  from {
+    transform: rotate(0);
+    font-size: 10px;
   }
-  to{
-  transform: rotate(360deg);
-  font-size: 30px;
+
+  to {
+    transform: rotate(360deg);
+    font-size: 30px;
   }
-}
-i{
-  color: var(--text-color);
-  font-size: 50px;
-  animation: rotar linear 6s infinite ;
 }
 
-@keyframes rotar{
-  from{
+i {
+  color: var(--text-color);
+  font-size: 5rem;
+  animation: rotar linear 6s infinite;
+}
+
+@keyframes rotar {
+  from {
     transform: rotateY(0);
   }
-  to{
+
+  to {
     transform: rotateY(360deg);
   }
 }
-.cont{
+
+.cont {
   width: 100%;
-  height: 80px;
+  height: 120px;
   margin: auto;
   overflow: hidden;
 }
-.slider{
+
+.slider {
   width: 2000px;
   display: flex;
   animation: scrol 20s linear infinite;
 }
-@keyframes scrol{
-  0%{
+
+@keyframes scrol {
+  0% {
     transform: translateX(0);
   }
-  100%{
+
+  100% {
     transform: translateX(-1000px);
   }
 }
-.slider:hover{
+
+.slider:hover {
   animation-play-state: paused;
 }
-.tarjeta{
+
+.tarjeta {
+  
   position: relative;
-  width: 100px;
+  width: 150px;
 }
-.icon{
+
+.icon {
   position: absolute;
-  width: 100%;
+  
   top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
-.nombre{
+
+.nombre {
+  font-size: 1.6rem;
   position: absolute;
   color: var(--text-color);
   width: 100%;
@@ -130,167 +298,152 @@ i{
   right: 0;
   margin: 0 auto;
 }
-.tarjeta:hover .nombre{
+
+.tarjeta:hover .nombre {
   opacity: 100%;
 }
-.tarjeta:hover .icon{
+
+.tarjeta:hover .icon {
   transform: rotateY(0) !important;
   animation-play-state: paused;
   opacity: 30%;
   text-shadow: var(--sombra-perfil);
 }
-.cajas a{
-  width:40%;
+
+.cajas a {
+  width: 40%;
   color: var(--text-color);
   font-size: 50px;
   text-decoration: none;
   margin: 3%;
 }
-.cajas a:hover{
+
+.cajas a:hover {
   color: greenyellow;
   text-shadow: 0px 0px 40px greenyellow;
   transform: scale(120%);
 }
-.cont2{
+
+.cont2 {
   margin: 0 auto;
   display: flex;
   width: 100%;
 }
-.cajas{
+
+.cajas {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
   height: auto;
   width: 40%;
-  border: 3px solid ;
+  border: 3px solid;
   border-color: var(--text-color);
   border-radius: 20px;
   box-shadow: inset 0px 0px 20px var(--text-color);
-  
+
 }
-.cajas:hover{
+
+.cajas:hover {
   transform: scale(105%);
 }
+
 .footercont {
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    text-align: center;
-    background-color: var(--bgcv);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  text-align: center;
+  background-color: var(--bgcv);
 }
+
 footer {
-    margin: 0 auto;
+  margin: 0 auto;
 }
-.cv{
-  background:  var(--bgcv) ;
-  height: auto;
-}
-.downcv{
-  position: relative;
-  width: 200px;
-  height: 50px;
-  border-radius: 30px;
-  font-size: 30px;
-  overflow: hidden;
-}
-.downcv::before {
-  content: '';
-  top: 0;
-  left: -100%;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  background-color: greenyellow;
-  font-size: 30px;
-  z-index: -1;
-  
-}
-.downcv:hover::before{
-  left: 0;
-  transition: all 2s;
-}
-.downcv:hover{
-    cursor: pointer;
-    transform: scale(120%);
-}
-.footercont a,.cv a{
+
+.footercont a,
+.cv a {
   color: var(--text-color);
   font-size: 48px;
   margin: 20px;
   animation: saltar linear 2s infinite;
 }
-.footercont a:hover, .cv a:hover{
+
+.footercont a:hover {
   color: greenyellow;
   text-shadow: 0px 0px 40px greenyellow;
   font-size: 60px;
 }
-@keyframes saltar{
-  0%{
+
+@keyframes saltar {
+  0% {
     transform: rotate(4deg);
   }
-  20%{
-        transform: rotate(-4deg);
+
+  20% {
+    transform: rotate(-4deg);
 
   }
-  40%{
-        transform: rotate(4deg);
+
+  40% {
+    transform: rotate(4deg);
 
   }
-  60%{
+
+  60% {
     transform: rotate(-4deg);
   }
-  80%{
-        transform: rotate(0deg);
+
+  80% {
+    transform: rotate(0deg);
 
   }
-  100%{
-        transform: rotate(0deg);
+
+  100% {
+    transform: rotate(0deg);
 
   }
 }
-.switch-button {
-    display: inline-block;
-    width: 30%
-}
+
+
+
 .switch-button .switch-button__checkbox {
-    display: none;
+  display: none;
 }
+
 .switch-button .switch-button__label {
-    background-color: var(--color-red);
-    width: 60px;
-    height: 30px;
-    border-radius: 30px;
-    display: inline-block;
-    position: relative;
+  background-color: var(--color-red);
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  display: inline-block;
+  position: relative;
 }
+
 .switch-button .switch-button__label:before {
-    transition: .2s;
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: var(--color-button);
-    content: '';
-    border-radius: 50%;
-    box-shadow: inset 0px 0px 0px 2px var(--color-black);
+  transition: .2s;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-button);
+  content: '';
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 2px var(--color-black);
 }
-.switch-button .switch-button__checkbox:checked + .switch-button__label {
-    background-color: var(--color-green);
+
+.switch-button .switch-button__checkbox:checked+.switch-button__label {
+  background-color: var(--color-green);
 }
-.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
-    transform: translateX(2rem);
+
+.switch-button .switch-button__checkbox:checked+.switch-button__label:before {
+  transform: translateX(2rem);
 }
-.menu{
-  display: flex;
-  margin: 0 auto;
-  text-align: center;
-}
-.name{
+
+.name {
   margin: 0 auto;
   width: 100%;
 }
-.reloj{
+
+.reloj {
   display: flex;
   margin: 0 auto;
   margin: 5px;
@@ -303,16 +456,19 @@ footer {
   animation: tictoc 1s linear infinite;
   animation-play-state: paused;
 }
-@keyframes tictoc{
-  0%{
+
+@keyframes tictoc {
+  0% {
     box-shadow: inset 0px 0px 30px paleturquoise;
   }
-  100%{
-      box-shadow: inset 0px 0px 60px black;
+
+  100% {
+    box-shadow: inset 0px 0px 60px black;
 
   }
 }
-.reloj .unidades{
+
+.reloj .unidades {
   display: flex;
   position: relative;
   text-align: center;
@@ -324,9 +480,9 @@ footer {
   background: var(--relojfondo);
   min-height: 50px;
   max-height: 100px
-
 }
-.reloj div{
+
+.reloj div {
   display: flex;
   position: relative;
   text-align: center;
@@ -334,14 +490,16 @@ footer {
   height: 50px;
 
 }
-.reloj h1{
+
+.reloj h1 {
   text-shadow: 2px -2px 2px black;
   margin: 0 auto;
   margin-top: 5px;
   font-family: digital;
   color: white;
 }
-@font-face{
+
+@font-face {
   font-family: digital;
   src: url(/recursos/DS-DIGIB.TTF);
 }

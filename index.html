@@ -4,238 +4,398 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="reset.css">
   <link id="tema" rel="stylesheet" href="style.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <title></title>
   <script src="https://kit.fontawesome.com/15ddfdef82.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="thema">
-    <div class="menu">
-      <div class="reloj" id="reloj">
-        <div class="unidades">
-          <h1 id="hr"></h1>
-        </div>
-        <div>
-            <h1>:</h1>
-        </div>
-        <div class="unidades">
-          <h1 id="mn"></h1>
-        </div>
-        <div>
-          <h1>:</h1>
-        </div>
-        <div class="unidades">
-          <h1 id="sg"></h1>
-        </div>
-        <div>
-          <h1>-</h1>
-        </div>
-        <div class="unidades">
-          <h1 id="am"></h1>
-      </div>
-      </div>
-        <div class="switch-button">
-          <h3>Theme Select</h3>
+  <header class="menu">
+    <h1>DEV Jhonatan Calle</h1>
+    <nav class="menu__nav">
+      <ul>
+        <li class="menu__enlace"><a href="#sobre__mi">Sobre Mi</a></li>
+        <li class="menu__enlace"><a href="#skills">Skills</a></li>
+        <li class="menu__enlace"><a href="#hobbies">Hobbies</a></li>
+        <li class="menu__enlace"><a href="#formacion">Formacion</a></li>
+        <li class="menu__enlace"><a href="#">Proyectos</a></li>
+        <li class="menu__enlace"><a href="mailto:kalle@hotmail.com">📧Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="switch-button">
+      <h3>Theme Select</h3>
       <!-- Checkbox -->
       <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox"
         onclick="themeChange()">
       <!-- Botón -->
       <label for="switch-label" class="switch-button__label"></label>
     </div>
-    </div>
-  <div>
-    <h2>Pagina en desarrollo</h2>
-    <div class="name">
-        <h1>Jhonatan Calle</h1>
-      </div>
-    <div>
-      <img class="perfil" src="/recursos/perfil.jpg" alt="">
-    </div>
-    <h1>Fullstack Developer</h1>
-    <div class="cont">
-      <div class="slider">
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-html5 "> </i>
-        </div>
-        <div class="nombre">
-          <h4>Html</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-react "> </i>
-        </div>
-        <div class="nombre">
-          <h4>React</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-java"></i>
-        </div>
-        <div class="nombre">
-          <h4>Java</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-square-js"></i>
-        </div>
-        <div class="nombre">
-          <h4>JavaScrip</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-css3-alt"></i>
-        </div>
-        <div class="nombre">
-          <h4>CSS</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-python"></i>
-        </div>
-        <div class="nombre">
-          <h4>Python</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-node"></i>
-        </div>
-        <div class="nombre">
-          <h4>Node</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-square-github"></i>
-        </div>
-        <div class="nombre">
-          <h4>Github</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-bootstrap"></i>
-        </div>
-        <div class="nombre">
-          <h4>Bootstrap</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-solid fa-database"></i>
-        </div>
-        <div class="nombre">
-          <h4>SQL <br> No SQL</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-html5 "> </i>
-        </div>
-        <div class="nombre">
-          <h4>Html</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-react "> </i>
-        </div>
-        <div class="nombre">
-          <h4>React</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-java"></i>
-        </div>
-        <div class="nombre">
-          <h4>Java</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-square-js"></i>
-        </div>
-        <div class="nombre">
-          <h4>JavaScrip</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-css3-alt"></i>
-        </div>
-        <div class="nombre">
-          <h4>CSS</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-python"></i>
-        </div>
-        <div class="nombre">
-          <h4>Python</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-node"></i>
-        </div>
-        <div class="nombre">
-          <h4>Node</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-square-github"></i>
-        </div>
-        <div class="nombre">
-          <h4>Github</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-brands fa-bootstrap"></i>
-        </div>
-        <div class="nombre">
-          <h4>Bootstrap</h4>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <div class="icon">
-          <i class="fa-solid fa-database"></i>
-        </div>
-        <div class="nombre">
-          <h4>SQL <br> No SQL</h4>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-  <div class="cv">
-    <h1>Descarga Mi CV</h1>
-    <div>
-      <a href="/recursos/CV_Jhonatan_Calle.pdf" download>
-        <button class="downcv">Descargar</button>
-      </a>
-    </div>
+  </header>
 
-    <a class="fa fa-github" href="https://github.com/JcalleA"></a>
-    <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/jhonatan-calle/"></a>
-  </div>
+  <section class="sobre">
+    <div class="sobre__foto">
+      <img class="foto__perfil" src="/recursos/perfil.jpg" alt="">
+    </div>
+    <div class="sobre_info">
+      <h1 class="sobre__h1">Hola, Me llamo Jhonatan y Desarrollo Aplicativos Web</h1>
+      <p class="sobre__parrafo">Soy Ingeniero Industrial, con diplomado en desarrollo de Software y Analítica de Datos,
+        actualmente participo en el proyecto de Oracle con Alura Latam, he desarrollado varios proyectos de carácter
+        personal y educativos</p>
+
+      <ul>
+        <li class="sobre__enlace"><a class="fa fa-github" href="https://github.com/JcalleA"></a></li>
+        <li class="sobre__enlace"><a class="fa fa-linkedin-square"
+            href="https://www.linkedin.com/in/jhonatan-calle/"></a></li>
+        <li class="sobre__enlace "><a class="fa fa-download" href="/recursos/CV_Jhonatan_Calle.pdf" download></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="sobre__mi" id="sobre__mi">
+    <h1>Sobre Mi</h1>
+    <p>Con mi formación humana, académica y laboral centrada en el desarrollo tecnológico, la productividad y los
+      procesos industriales, junto con mi experiencia como Operador de Procesos en RIOPAILA CASTILLA S.A., he adquirido
+      habilidades sólidas en el campo del desarrollo de software, el análisis de datos, la logística y la gestión de
+      operaciones. Como próximo Ingeniero Industrial y con conocimientos en lenguajes de programación como Python, Java,
+      SQL, HTML, CSS y JS para el desarrollo web, me apasiona enfrentar nuevos desafíos y aprender constantemente.
+      Además, mi experiencia como Operador de Procesos en la destilería y mi rol como Auxiliar de Innovación en Sucroal
+      S.A. me han brindado una visión integral de los procesos de producción y la capacidad para tomar decisiones,
+      gestionar equipos y resolver problemas. Mi enfoque en el trabajo en equipo, mi capacidad de liderazgo y mi empatía
+      me permiten impulsar colaboraciones efectivas y lograr resultados sobresalientes. Estoy comprometido con el
+      beneficio colectivo y personal, y siempre busco ampliar mis conocimientos para contribuir al desarrollo
+      tecnológico y la mejora continua en el campo industrial.</p>
+  </section>
+  <section class="skills" id="skills">
+    <h1>Skills</h1>
+    <div>
+      <div class="cont">
+        <div class="slider">
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-html5 "> </i>
+            </div>
+            <div class="nombre">
+              <h4>Html</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-react "> </i>
+            </div>
+            <div class="nombre">
+              <h4>React</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="nombre">
+              <h4>Java</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+            <div class="nombre">
+              <h4>JavaScrip</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="nombre">
+              <h4>CSS</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="nombre">
+              <h4>Python</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-node"></i>
+            </div>
+            <div class="nombre">
+              <h4>Node</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-square-github"></i>
+            </div>
+            <div class="nombre">
+              <h4>Github</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+            <div class="nombre">
+              <h4>Bootstrap</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="nombre">
+              <h4>SQL <br> No SQL</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-html5 "> </i>
+            </div>
+            <div class="nombre">
+              <h4>Html</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-react "> </i>
+            </div>
+            <div class="nombre">
+              <h4>React</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="nombre">
+              <h4>Java</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+            <div class="nombre">
+              <h4>JavaScrip</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="nombre">
+              <h4>CSS</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="nombre">
+              <h4>Python</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-node"></i>
+            </div>
+            <div class="nombre">
+              <h4>Node</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-square-github"></i>
+            </div>
+            <div class="nombre">
+              <h4>Github</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+            <div class="nombre">
+              <h4>Bootstrap</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="nombre">
+              <h4>SQL <br> No SQL</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills" id="hobbies">
+    <h1>Hobbies</h1>
+    <div>
+      <div class="cont">
+        <div class="slider">
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-book-reader'></i>
+            </div>
+            <div class="nombre">
+              <h4>Study</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-laptop-code'></i>
+            </div>
+            <div class="nombre">
+              <h4>Develop</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-gamepad'></i>
+            </div>
+            <div class="nombre">
+              <h4>Play Games</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-music'></i>
+            </div>
+            <div class="nombre">
+              <h4>Music</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='far fa-futbol'></i>
+            </div>
+            <div class="nombre">
+              <h4>Play Soccer</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-umbrella-beach'></i>
+            </div>
+            <div class="nombre">
+              <h4>Travel</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-pizza-slice'></i>
+            </div>
+            <div class="nombre">
+              <h4>Eat</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-book-reader'></i>
+            </div>
+            <div class="nombre">
+              <h4>Study</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-laptop-code'></i>
+            </div>
+            <div class="nombre">
+              <h4>Develop</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-gamepad'></i>
+            </div>
+            <div class="nombre">
+              <h4>Play Games</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-music'></i>
+            </div>
+            <div class="nombre">
+              <h4>Music</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='far fa-futbol'></i>
+            </div>
+            <div class="nombre">
+              <h4>Play Soccer</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-umbrella-beach'></i>
+            </div>
+            <div class="nombre">
+              <h4>Travel</h4>
+            </div>
+          </div>
+          <div class="tarjeta">
+            <div class="icon">
+              <i class='fas fa-pizza-slice'></i>
+            </div>
+            <div class="nombre">
+              <h4>Eat</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="formacion" id="formacion">
+    <h1>Formacion Academica</h1>
+    <div class="formacion__container">
+      <div class="formacion__tarjeta">
+        <img class="formacion__img" src="/recursos/Logo_de_la_UNAD.svg.png" alt="">
+        <h2>Ingeniero Industrial</h2>
+        <h3>2023 UNAD</h3>
+      </div>
+      <div class="formacion__tarjeta">
+        <img class="formacion__img" src="/recursos/alura.png" alt="">
+        <h2>Formación en UX Design</h2>
+        <h3>2023</h3>
+      </div>
+      <div class="formacion__tarjeta">
+        <img class="formacion__img" src="/recursos/Correlation-One.png" alt="">
+        <h2>Data Science</h2>
+        <h3>2022</h3>
+      </div>
+      <div class="formacion__tarjeta">
+        <img class="formacion__img" src="/recursos/Logo_U.T.P.png" alt="">
+        <h2>Desarrollo De Software</h2>
+        <h3>2022 UTP</h3>
+      </div>
+    </div>
+  </section>
+
+
   <div>
     <h1>Mi Portafolio</h1>
     <div class="cont2">
       <div class="cajas">
         <h2>Encriptador de Texto</h2>
-        <img class="btnencrip" src="/recursos/matrix.gif" ></img>
+        <img class="btnencrip" src="/recursos/matrix.gif"></img>
         <div>
           <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/EncrypText"></a>
 
@@ -244,7 +404,7 @@
       </div>
       <div class="cajas">
         <h2>Buscador Servicios</h2>
-        <img class="btnencrip" src="/recursos/people.gif" ></img>
+        <img class="btnencrip" src="/recursos/people.gif"></img>
         <div>
           <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/Bank-Jobs"></a>
 
@@ -261,25 +421,25 @@
           <!-- a id="linkPage" class="fa-solid fa-pager" href="https://jcallea.github.io/EncrypText/"></a !-->
         </div>
       </div>
-    <div class="cajas">
-      <h2>Youtube Downloader</h2>
-      <img class="btnencrip" src="/recursos/giphy.gif" ></img>
-      <div>
-        <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/Descargar-viudeos-de-youtube"></a>
-        <!-- a id="linkPage" class="fa-solid fa-pager" href="https://jcallea.github.io/EncrypText/"></a !-->
-      </div>
-    </div>
-  </div>
-      <div class="cont2">
-        <div class="cajas">
-        <h2>Tic Tac Toe</h2>
-        <img class="btnencrip" src="/recursos/tictactoe.gif" ></img>
+      <div class="cajas">
+        <h2>Youtube Downloader</h2>
+        <img class="btnencrip" src="/recursos/giphy.gif"></img>
         <div>
-          <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/tictactoe"></a>
-          <a id="linkPage" class="fa-solid fa-pager" href="https://jcallea.github.io/tictactoe/"></a >
+          <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/Descargar-viudeos-de-youtube"></a>
+          <!-- a id="linkPage" class="fa-solid fa-pager" href="https://jcallea.github.io/EncrypText/"></a !-->
         </div>
       </div>
-  </div>
+    </div>
+    <div class="cont2">
+      <div class="cajas">
+        <h2>Tic Tac Toe</h2>
+        <img class="btnencrip" src="/recursos/tictactoe.gif"></img>
+        <div>
+          <a class="fa-solid fa-file-code" href="https://github.com/JcalleA/tictactoe"></a>
+          <a id="linkPage" class="fa-solid fa-pager" href="https://jcallea.github.io/tictactoe/"></a>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="footercont">
     <footer>
