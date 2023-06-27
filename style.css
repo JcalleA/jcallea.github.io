@@ -169,7 +169,6 @@ body {
   font-size: 4rem;
   margin-bottom: 100px;
   margin-top: 50px;
-
 }
 
 .formacion {
@@ -207,7 +206,11 @@ body {
 .formacion__img {
   width: 100%;
 }
-
+.cursos{
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-around;
+}
 .formacion__tarjeta li {
   margin-top: 15px;
 }
@@ -427,21 +430,33 @@ i {
   width: 70%;
 }
 .form__entry{
-  align-items: center;
-  display: flex;
+  width: 20%;
   justify-content: right;
+  align-items: center;
   margin: 10px;
-  
 }
 .form__input{
+  width: 80%;
+  
+}
+.form__entry label{
+  height: 50px;
+}
+.form__input input{
   font-size: 2rem;
   width: 80%;
   height: 50px;
-  margin-left: 20px;
+  margin: 5px;
 }
-
+.form__container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
 .footer__form button{
-  width: 200px;
+  margin: 15px;
+  max-width: 200px;
   height: 80px;
   border-radius: 20px;
   font-size: 3rem;
@@ -450,14 +465,14 @@ i {
   transform: scale(120%);
 box-shadow:  0px 0px 10px greenyellow;
 }
-.whatsapp img{
+.whatsapp__img{
   margin: 20px;
-  max-width: 400px;
   animation: saltar linear 4s infinite;
 }
 .footer h1{
   color: white;
   font-size: 2rem;
+  margin: 20px;
 }
 .footer a,
 .cv a {
@@ -471,6 +486,7 @@ box-shadow:  0px 0px 10px greenyellow;
   text-shadow: 0px 0px 40px greenyellow;
   font-size: 60px;
 }
+
 .whatsapp{
   margin-top: 50px;
 
@@ -574,8 +590,160 @@ box-shadow:  0px 0px 10px greenyellow;
 .unidades {
   color: var(--colorfondo);
   font-family: digital;
+}
+
+@media screen and (min-width: 360px) {
+  .menu__nav{
+    display: none;
+  }
+  .sobre{
+    display: block;
+  }
+  .sobre h1{
+    font-size: 2.5rem;
+  }
+  .sobre__parrafo {
+    font-size: 1.4rem;
+  }
+  .formacion h1 {
+    font-size: 2.5rem;
+  }
+  .sobre__mi h1 {
+    font-size: 2.5rem;
+  }
+  .skills h1 {
+    font-size: 2.5rem;
+  }
+  .experiencia h1 {
+    font-size: 2.5rem;
+  }
+  .experiencia__tarjeta h1 {
+    font-size: 1.5rem;
+  }
+  .portafolio__tarjeta h2{
+    font-size: 1.2rem;
+  }
+  .portafolio h1 {
+    font-size: 2.5rem;
+  }
+  .form__entry label{
+    font-size: 1rem;
+  }
+  .form__input input{
+    font-size: 1rem;
+  }
+  .footer h1{
+    font-size: 1.4rem;
+  }
+  .whatsapp__img{
+    max-width: 250px;
+  }
+  .whatsapp h1{
+    font-size: 1.5rem;
+  }
   
-  
+}
+
+@media screen and (min-width: 768px) {
+  .menu__nav{
+    display: none;
+  }
+  .sobre{
+    display: flex;
+  }
+  .sobre h1{
+    font-size: 3rem;
+  }
+  .sobre__parrafo {
+    font-size: 1.7rem;
+  }
+  .formacion h1 {
+    font-size: 3rem;
+  }
+  .sobre__mi h1 {
+    font-size: 3rem;
+  }
+  .skills h1 {
+    font-size: 3rem;
+  }
+  .experiencia h1 {
+    font-size: 3rem;
+  }
+  .experiencia__tarjeta h1 {
+    font-size: 1.8rem;
+  }
+  .portafolio__tarjeta h2{
+    font-size: 1.4rem;
+  }
+  .portafolio h1 {
+    font-size: 3rem;
+  }
+  .form__entry label{
+    font-size: 1.5rem;
+  }
+  .form__input input{
+    font-size: 1.5rem;
+  }
+  .footer h1{
+    font-size: 1.7rem;
+  }
+  .whatsapp__img{
+    max-width: 400px;
+  }
+  .whatsapp h1{
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .menu__nav{
+    display: block;
+  }
+  .sobre{
+    display: flex;
+  }
+  .sobre h1{
+    font-size: 4rem;
+  }
+  .sobre__parrafo {
+    font-size: 2rem;
+  }
+  .formacion h1 {
+    font-size: 4rem;
+  }
+  .sobre__mi h1 {
+    font-size: 3.7rem;
+  }
+  .skills h1 {
+    font-size: 4rem;
+  }
+  .experiencia h1 {
+    font-size: 4rem;
+  }
+  .portafolio h1 {
+    font-size: 4rem;
+  }
+  .experiencia__tarjeta h1 {
+    font-size: 2rem;
+  }
+  .portafolio__tarjeta h2{
+    font-size: 1.8rem;
+  }
+  .form__entry label{
+    font-size: 2rem;
+  }
+  .form__input input{
+    font-size: 2rem;
+  }
+  .footer h1{
+    font-size: 2rem;
+  }
+  .whatsapp__img{
+    max-width: 500px;
+  }
+  .whatsapp h1{
+    font-size: 3rem;
+  }
 }
 
 @font-face {
