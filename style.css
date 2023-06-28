@@ -199,6 +199,10 @@ body {
 }
 
 .formacion__tarjeta {
+  width: 50%;
+  padding: 10px;
+}
+.formacion__tarjeta__cursos {
   width: 25%;
   padding: 10px;
 }
@@ -641,6 +645,9 @@ box-shadow:  0px 0px 10px greenyellow;
   .whatsapp h1{
     font-size: 1.5rem;
   }
+  .portafolio__tarjeta a {
+    font-size: 2.5rem;
+  }
   
 }
 
@@ -693,6 +700,9 @@ box-shadow:  0px 0px 10px greenyellow;
   .whatsapp h1{
     font-size: 2.2rem;
   }
+  .portafolio__tarjeta a {
+    font-size: 3.5rem;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -743,6 +753,9 @@ box-shadow:  0px 0px 10px greenyellow;
   }
   .whatsapp h1{
     font-size: 3rem;
+  }
+  .portafolio__tarjeta a {
+    font-size: 4rem;
   }
 }
 
