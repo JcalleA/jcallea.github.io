@@ -237,11 +237,12 @@ body {
 
 .experiencia h1 {
   font-size: 4rem;
+  margin-top: 20px;
 }
 
 .experiencia__tarjeta h1 {
   font-size: 2rem;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .experiencia__tarjeta h2 {
@@ -460,10 +461,9 @@ i {
 }
 .footer__form button{
   margin: 15px;
-  max-width: 200px;
-  height: 80px;
-  border-radius: 20px;
-  font-size: 3rem;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 10px black;
 }
 .footer__form button:hover{
   transform: scale(120%);
@@ -612,6 +612,9 @@ box-shadow:  0px 0px 10px greenyellow;
   .formacion h1 {
     font-size: 2.5rem;
   }
+  .formacion__tarjeta__cursos li{
+    font-size: 0.7rem;
+  }
   .sobre__mi h1 {
     font-size: 2.5rem;
   }
@@ -645,8 +648,14 @@ box-shadow:  0px 0px 10px greenyellow;
   .whatsapp h1{
     font-size: 1.5rem;
   }
+  .footer__form button{
+    font-size: 2rem;
+  }
   .portafolio__tarjeta a {
     font-size: 2.5rem;
+  }
+  .nombre{
+    opacity: 100%;
   }
   
 }
