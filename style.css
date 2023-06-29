@@ -533,7 +533,6 @@ box-shadow:  0px 0px 10px greenyellow;
 .switch-button .switch-button__checkbox {
   display: none;
 }
-
 .switch-button .switch-button__label {
   background-color: var(--color-red);
   width: 60px;
