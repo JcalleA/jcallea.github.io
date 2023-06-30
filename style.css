@@ -578,6 +578,8 @@ box-shadow:  0px 0px 10px greenyellow;
   border-radius: 20px;
   animation: tictoc 1s linear infinite;
   box-shadow: inset 0px 0px 15px black;
+  max-width: 180px;
+  padding: 5px;
 }
 
 @keyframes tictoc {
@@ -653,9 +655,6 @@ box-shadow:  0px 0px 10px greenyellow;
   }
   .portafolio__tarjeta a {
     font-size: 2.5rem;
-  }
-  .nombre{
-    opacity: 100%;
   }
   
 }
