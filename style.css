@@ -83,19 +83,31 @@ body {
 .sobre {
   justify-content: space-between;
   text-align: center;
-
   display: flex;
   font-size: 2rem;
   align-items: center;
 
-
 }
 
 .foto__perfil {
-  max-width: 210px;
+  
+  max-width: 200px;
   border-radius: 100px;
-  box-shadow: var(--sombra-perfil);
-  margin: 15px;
+  
+}
+.sobre__foto{
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+@keyframes abrir{
+  0%{
+    left:0%;
+  }
+  100%{
+    left: -400%;
+  }
 }
 
 .sobre__info {
@@ -218,7 +230,15 @@ body {
 .formacion__tarjeta li {
   margin-top: 15px;
 }
-
+.formacion__slider img{
+  width: 100%;
+  animation: slider__cambiar infinite 2s;
+}
+@keyframes slider__cambiar{
+  100%{
+    left:  -100vw;
+  }
+}
 .experiencia__tarjeta {
   margin: 0 auto;
   max-width: 80%;
