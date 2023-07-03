@@ -230,13 +230,31 @@ body {
 .formacion__tarjeta li {
   margin-top: 15px;
 }
-.formacion__slider img{
-  width: 100%;
-  animation: slider__cambiar infinite 2s;
+.formacion__slider{
+  display: flex;
+  overflow: hidden;
+  width: 80vw;
 }
+.formacion__slider img{
+  width:80vw;
+  animation: slider__cambiar infinite 15s;
+  animation-delay: 2s;
+}
+
+
 @keyframes slider__cambiar{
+  0%{
+    transform: translateX(0vw);
+  }
+  33%{
+    transform: translateX(-80vw);
+  }
+  66%{
+    transform: translateX(-160vw);
+  }
+  
   100%{
-    left:  -100vw;
+    transform: translateX(-240vw);
   }
 }
 .experiencia__tarjeta {
