@@ -4,12 +4,12 @@
   --relojfondo:#464646;
   --sombra-perfil: 0px 0px 38px black;
   --bgcv: rgb(23, 124, 131);
-  --color-green: black;
-  --color-red: rgb(23, 124, 131);
+  --color-green: springgreen;
+  --color-red: black;
   --color-button: gray;
-  --color-black: #000;
+  --color-black: springgreen;
   
-  --enlace-color: #464646;
+  --enlace-color: springgreen;
   --text-color: #464646;
 }
 
@@ -18,8 +18,10 @@ body.ligth-theme {
   --text-color: white;
   --sombra-perfil: 0px 0px 38px white;
   --bgcv: black;
-  --enlace-color: white;
+  --enlace-color: springgreen;
   --relojfondo: white;
+    --color-black: black;
+
 }
 
 .menu {
@@ -33,6 +35,38 @@ body.ligth-theme {
 
 .menu h1 {
   font-size: 1.8rem;
+}
+.wave__container{
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.wave{
+  color: springgreen;
+  animation: wave 3s ease-in-out infinite;
+  
+}
+.wave__container h1{
+  position: absolute;
+  
+}
+@keyframes wave{
+  0%, 100% {
+    clip-path: polygon(0% 42%, 10% 45%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+    50% {
+    clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+.border{
+  color: var(--colorfondo);
+  text-shadow: -1px -1px 0px var(--text-color),
+  -1px 1px 0px var(--text-color),
+  1px 1px 0px var(--text-color),
+  1px -1px 0px var(--text-color);
 }
 
 .menu__enlace {
@@ -128,6 +162,7 @@ body {
   margin: 10px;
   color: var(--enlace-color);
   animation: saltar linear 2s infinite;
+  text-shadow: 0px 0px 3px black;
 }
 
 .sobre__enlace:hover {
@@ -215,8 +250,14 @@ body {
   padding: 10px;
 }
 .formacion__tarjeta__cursos {
+  display: flex;
+  
+  margin: 5px;
+  align-items: center;
   width: 25%;
-  padding: 10px;
+  height: 100px;
+  padding: 5px;
+  box-shadow: 0px 0px 5px black;
 }
 
 .formacion__img {
@@ -224,21 +265,46 @@ body {
 }
 .cursos{
   flex-wrap: wrap;
-  align-items: start;
   justify-content: space-around;
+  align-items: center;
 }
 .formacion__tarjeta li {
   margin-top: 15px;
 }
 .formacion__slider{
   display: flex;
-  overflow: hidden;
   width: 80vw;
+  overflow: hidden;
+  overflow: scroll;
 }
 .formacion__slider img{
   width:80vw;
-  animation: slider__cambiar infinite 15s;
-  animation-delay: 2s;
+  overflow: scroll;
+}
+.modal{
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 94%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modal ol,li{
+  color: white;
+  margin-top: 30px;
+}
+.modal__img{
+  width: 40vw;
+}
+.modal a{
+  right: 0;
+  position: absolute;
+  margin: 15px;
+  color: white;
+  font-size: 3rem;
 }
 
 
@@ -378,8 +444,9 @@ span {
 }
 
 i {
-  color: var(--text-color);
+  color: springgreen;
   font-size: 5rem;
+  text-shadow: 0px 0px 3px black;
   animation: rotar linear 6s infinite;
 }
 
@@ -428,7 +495,6 @@ i {
 
 .icon {
   position: absolute;
-
   top: 0;
   left: 0;
   right: 0;
@@ -622,7 +688,7 @@ box-shadow:  0px 0px 10px greenyellow;
 
 @keyframes tictoc {
   0% {
-    box-shadow: inset 0px 0px 10px paleturquoise;
+    box-shadow: inset 0px 0px 10px springgreen;
   }
 
   100% {
@@ -639,6 +705,9 @@ box-shadow:  0px 0px 10px greenyellow;
 @media screen and (min-width: 360px) {
   .menu__nav{
     display: none;
+  }
+  .wave__container h1{
+    font-size: 2rem;
   }
   .sobre{
     display: block;

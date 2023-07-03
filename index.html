@@ -12,6 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Press+Start+2P&family=Russo+One&display=swap" rel="stylesheet">
   <title></title>
   <script src="https://kit.fontawesome.com/15ddfdef82.js" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +22,12 @@
 <body id="thema">
   <header class="menu">
     <div>
-      <h1>DEV Jhonatan Calle</h1>
+      <div class="wave__container">
+              <h1 class="border">DEV</h1>
+      <h1 class="wave">DEV</h1>
+
+      </div>
+      <h1>Jhonatan Calle</h1>
       <div class="reloj">
         <div class="unidades">
           <h1 id="hr"></h1>
@@ -70,7 +78,12 @@
       <img class="foto__perfil" src="/recursos/perfil.jpg" alt="">
     </div>
     <div class="sobre_info">
-      <h1 class="sobre__h1">Desarrollo De Aplicativos Web</h1>
+      <h1 class="sobre__h1">Desarrollo De Aplicativos </h1>
+      <div class="wave__container">
+              <h1 class="border">WEB</h1>
+      <h1 class="wave">WEB</h1>
+
+      </div>
       <p class="sobre__parrafo">Soy Ingeniero Industrial, con Diplomados en Desarrollo de Software y Analítica de Datos.
         Actualmente participo en el proyecto de Oracle con Alura Latam.</p>
       <h2 class="sobre__h2">Redes Sociales 👇 Descarga Mi CV </h2>
@@ -464,24 +477,17 @@ Desde que escribí mi primer código, supe que estaba destinado a explorar el fa
         <h3>2022 UTP</h3>
       </div>
     </div>
-    <h1>Hard Skills</h1>
-    <div class="formacion__slider">
-      
-  <div>
-    <img src="/recursos/certificados/programacion/Data Science Certificado Honores-1.png" alt="Certificado 1">
-  </div>
-  <div>
-    <img src="/recursos/certificados/programacion/Diplomado En Desarrollo De Software Todos Ciclos-1.png" alt="Certificado 2">
-  </div>
-  <div>
-    <img src="certificado3.jpg" alt="Certificado 3">
-  </div>
-</div>
+    <h1>Cursos</h1>
 
 
-    <!-- <div class="formacion__container cursos">
+    <div class="formacion__container cursos">
       <div class="formacion__tarjeta__cursos">
-        <img class="formacion__img" src="/recursos/google.png" alt="">
+      
+        <img onclick="abrir('modal__1')"  class="formacion__img" src="/recursos/google.png" alt="">
+    </div>
+    <div class="modal" id="modal__1">
+      <img class="modal__img" src="/recursos/google.png" alt="">
+      <a class="fa fa-window-close" onclick="cerrar('modal__1')"></a>
         <ol>
           <li>Google Cloud Computing Foundations 2022</li>
           <li>Data, ML, and AI in Google Cloud 2022</li>
@@ -490,16 +496,27 @@ Desde que escribí mi primer código, supe que estaba destinado a explorar el fa
           <li>Cloud Computing Fundamentals 2022</li>
         </ol>
       </div>
+
       <div class="formacion__tarjeta__cursos">
-        <img class="formacion__img" src="/recursos/patzi.png" alt="">
-        <ol>
+        <img onclick="abrir('modal__2')"  class="formacion__img" src="/recursos/patzi.png" alt="">
+        
+      </div>
+      <div class="modal" id="modal__2">
+      <img class="modal__img" src="/recursos/patzi.png" alt="">
+      <a class="fa fa-window-close" onclick="cerrar('modal__2')"></a>
+      <ol>
           <li>JavaScrip 2022</li>
           <li>Animaciones CSS 2022</li>
           <li>Introduccion React.js 2022</li>
         </ol>
       </div>
       <div class="formacion__tarjeta__cursos">
-        <img class="formacion__img" src="/recursos/open.png" alt="">
+        <img onclick="abrir('modal__3')" class="formacion__img" src="/recursos/open.png" alt="">
+        
+      </div>
+      <div class="modal" id="modal__3">
+      <img  class="modal__img" src="/recursos/open.png" alt="">
+      <a class="fa fa-window-close" onclick="cerrar('modal__3')"></a>
         <ol>
           <li>Conceptos Programacion 2022</li>
           <li>Introduccion Programacion 2022</li>
@@ -509,8 +526,13 @@ Desde que escribí mi primer código, supe que estaba destinado a explorar el fa
         </ol>
       </div>
       <div class="formacion__tarjeta__cursos">
-        <img class="formacion__img" src="/recursos/sena.png" alt="">
-        <ol>
+        <img onclick="abrir('modal__4')" class="formacion__img" src="/recursos/sena.png" alt="">
+        
+      </div>
+      <div class="modal" id="modal__4">
+      <img class="modal__img" src="/recursos/sena.png" alt="">
+      <a class="fa fa-window-close" onclick="cerrar('modal__4')"></a>
+      <ol>
           <li>Manejo Pruebas De Software 2022</li>
           <li>Tecnologia Gestion Agroempresarial 2024</li>
           <li>Fundamentos En Gestion De Calidad 2014</li>
@@ -520,8 +542,13 @@ Desde que escribí mi primer código, supe que estaba destinado a explorar el fa
         </ol>
       </div>
       <div class="formacion__tarjeta__cursos">
-        <img class="formacion__img" src="/recursos/ubits.png" alt="">
-        <ol>
+        <img onclick="abrir('modal__5')" class="formacion__img" src="/recursos/ubits.png" alt="">
+      
+      </div>
+          <div class="modal" id="modal__5">
+      <img class="modal__img" src="/recursos/ubits.png" alt="">
+      <a class="fa fa-window-close" onclick="cerrar('modal__5')"></a>
+         <ol>
           <li>Trabajo Colaborativo 2023</li>
           <li>Trabajo En Equipo 2023</li>
           <li>Resolucion De Conflictos 2023</li>
@@ -529,10 +556,16 @@ Desde que escribí mi primer código, supe que estaba destinado a explorar el fa
           <li>Define OKR ́S & KPI ́S 2023</li>
           <li>Seminario Empresarial Sindical 2022</li>
         </ol>
+    
       </div>
       <div class="formacion__tarjeta__cursos">
-        <img class="formacion__img" src="/recursos/bomberos.png" alt="">
-        <ol>
+        <img onclick="abrir('modal__6')" class="formacion__img" src="/recursos/bomberos.png" alt="">
+        
+      </div>
+      <div class="modal" id="modal__6">
+      <img class="modal__img" src="/recursos/bomberos.png" alt="">
+      <a class="fa fa-window-close" onclick="cerrar('modal__6')"></a>
+       <ol>
           <li>Brigada De Emergencias 2019</li>
           <li>Atencion Prehospitalaria 2018</li>
           <li>Rescate Espacios Confinados 2016</li>
@@ -540,7 +573,7 @@ Desde que escribí mi primer código, supe que estaba destinado a explorar el fa
           <li>Entrenamiento Brigadas 2015</li>
         </ol>
       </div>
-    </div> -->
+    </div>
   </section>
   <section class="experiencia">
     <h1>Experiencia Profecional</h1>

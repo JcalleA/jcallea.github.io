@@ -24,7 +24,21 @@ function obtenerHora(){
   relojMn.textContent=mn;
   relojSg.textContent=sg;
   relojAm.textContent=am;
-  reloj.style.animationPlayState= "running";
 }
 setInterval(obtenerHora, 1000);
 
+function abrir(id){
+  console.log(id);
+  
+  const modal=document.getElementById(id);
+  
+  modal.style.display="block";
+  
+  
+}
+
+function cerrar(id){
+  const modal=document.getElementById(id)
+  modal.style.display="none"
+  
+}
