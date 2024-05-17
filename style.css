@@ -49,6 +49,13 @@ body.ligth-theme{
   animation: wave 3s ease-in-out infinite;
   
 }
+.tarj_free{
+  margin-top: 18px;
+}
+.tarj_free a{
+  text-decoration: underline;
+  color: blue;
+}
 .wave__container h1{
   position: absolute;
   
